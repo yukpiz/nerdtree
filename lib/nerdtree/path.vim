@@ -70,7 +70,7 @@ function! s:Path.changeToDir()
 
     try
         execute "cd " . dir
-        call nerdtree#echo("CWD is now: " . getcwd())
+        "call nerdtree#echo("CWD is now: " . getcwd())
     catch
         throw "NERDTree.PathChangeError: cannot change CWD to " . dir
     endtry
